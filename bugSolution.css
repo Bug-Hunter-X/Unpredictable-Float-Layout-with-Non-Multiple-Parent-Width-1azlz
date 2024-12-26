@@ -1,0 +1,14 @@
+The issue can be resolved by using flexbox:
+
+```css
+div {
+  width: 50%;
+  box-sizing: border-box; /*fixes padding issues */
+}
+.parent {
+  display: flex;
+  flex-wrap: wrap;
+}
+```
+
+By using flexbox, the child elements will automatically adjust to fill the available space within the parent container, resolving the unpredictability issues caused by floating elements and differing parent widths.
