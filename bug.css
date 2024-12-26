@@ -1,0 +1,12 @@
+The following CSS code snippet exhibits unexpected behavior in some browsers:
+
+```css
+div {
+  width: 50%;
+  float: left;
+}
+```
+
+The issue arises when the parent container's width is not a multiple of the child div's width (50%). In such cases, the layout can become unpredictable, with unexpected gaps or overlaps.
+
+The floating child elements do not take into account the parent's size and may overflow or underflow their parent container.
